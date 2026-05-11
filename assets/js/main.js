@@ -229,22 +229,48 @@
   /**
    * Navmenu Scrollspy
    */
-  let navmenulinks = document.querySelectorAll('.navmenu a');
-
   function navmenuScrollspy() {
+    let navmenulinks = document.querySelectorAll('.navmenu a');
+    let scrollPosition = window.scrollY + 200;
+    
     navmenulinks.forEach(navmenulink => {
-      if (!navmenulink.hash) return;
-      let section = document.querySelector(navmenulink.hash);
-      if (!section) return;
-      let position = window.scrollY + 200;
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
-        navmenulink.classList.add('active');
-      } else {
-        navmenulink.classList.remove('active');
+      // Remove active from all first
+      navmenulink.classList.remove('active');
+    });
+
+    // Check each link to see if its section is in view
+    navmenulinks.forEach(navmenulink => {
+      let targetHref = navmenulink.getAttribute('href');
+      
+      // Skip Home link (external page link) - only active at top
+      if (targetHref === 'index.html') {
+        if (window.scrollY < 300) {
+          navmenulink.classList.add('active');
+        }
+        return;
       }
-    })
+
+      // Skip if no hash
+      if (!targetHref || !targetHref.startsWith('#')) {
+        return;
+      }
+
+      // Get the target section
+      let section = document.querySelector(targetHref);
+      if (!section) {
+        return;
+      }
+
+      // Check if section is in viewport range
+      let sectionStart = section.offsetTop;
+      let sectionEnd = sectionStart + section.offsetHeight;
+
+      if (scrollPosition >= sectionStart && scrollPosition < sectionEnd) {
+        navmenulink.classList.add('active');
+      }
+    });
   }
+
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 

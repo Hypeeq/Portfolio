@@ -25,7 +25,7 @@
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
-      let formData = new FormData( thisForm );
+      let formData = new URLSearchParams(new FormData(thisForm));
 
       if ( recaptcha ) {
         if(typeof grecaptcha !== "undefined" ) {

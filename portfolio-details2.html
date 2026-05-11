@@ -24,9 +24,10 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/portfolio-details4.css" rel="stylesheet">
 </head>
 
-<body class="portfolio-details-page">
+<body class="portfolio-details-page details4-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -35,11 +36,13 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#abstract" class="active">Introduction</a></li>
-          <li><a href="#employer-info">Employer Info</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#introduction">Intro</a></li>
+          <li><a href="#employer-info">Employer</a></li>
           <li><a href="#goals">Goals</a></li>
-          <li><a href="#job-description">Job Description</a></li>
+          <li><a href="#job-description">Work</a></li>
           <li><a href="#conclusions">Conclusions</a></li>
+          <li><a href="#reflection">Reflection</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -48,192 +51,203 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets\img\ovc3.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/product-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/branding-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/books-1.jpg" alt="">
-            </div>
-
+    <div class="page-title details4-title" data-aos="fade">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center gap-3">
+          <div>
+            <p class="eyebrow mb-2">Work Term II</p>
+            <h1 class="mb-2">Health Informatics Specialist</h1>
+            <p class="mb-0 title-sub">OVC Health Informatics, University of Guelph</p>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">OVC Work Term</li>
+            </ol>
+          </nav>
         </div>
+      </div>
+    </div>
 
+    <section id="portfolio-details" class="portfolio-details section pt-4">
+      <div class="container" data-aos="fade-up">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-8">
+            <div class="details4-panel h-100">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 650,
+                    "autoplay": {
+                      "delay": 4200
+                    },
+                    "slidesPerView": 1,
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide"><img src="assets/img/ovc3.jpg" alt="OVC"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/product-1.jpg" alt="Systems"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/branding-1.jpg" alt="Workflow"></div>
+                  <div class="swiper-slide"><img src="assets/img/portfolio/books-1.jpg" alt="Support"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Abstract/Introduction Section -->
+          <div class="col-lg-4">
+            <aside class="details4-panel h-100 summary-panel" data-aos="fade-left" data-aos-delay="100">
+              <h3>At A Glance</h3>
+              <ul class="meta-list">
+                <li><span>Role</span><strong>Tech Informatics Specialist</strong></li>
+                <li><span>Term</span><strong>Co-op II</strong></li>
+                <li><span>Focus</span><strong>Healthcare IT Operations</strong></li>
+                <li><span>Location</span><strong>Guelph, ON</strong></li>
+                <li><span>Manager</span><strong>Leroy Carter</strong></li>
+              </ul>
+
+              <div class="chip-wrap">
+                <span>Imprivata</span>
+                <span>ezyVet</span>
+                <span>Footprints</span>
+                <span>Systems Integration</span>
+               <span>IT Support</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="introduction" class="section">
       <div class="container" data-aos="fade-up">
-        <h2>Abstract/Introduction</h2>
-        <p>
-          During my work term as a Tech Informatics Specialist in the Health Informatics division at the Ontario Veterinary College (OVC), University of Guelph, I gained valuable hands-on experience in the field of Information Technology within a hospital environment. My contributions ranged from supporting endpoint devices to optimizing clinical workflows, Resolving Problems and streamlining healthcare data systems. This page highlights the technical expertise, collaborative projects, and professional growth I achieved during this term.        </p>
+        <div class="details4-card">
+          <h2>Introduction</h2>
+          <p>
+            During my work term as a Tech Informatics Specialist in the Health Informatics division at the Ontario Veterinary College (OVC), University of Guelph, I gained valuable hands-on experience in the field of Information Technology within a hospital environment. My contributions ranged from supporting endpoint devices to optimizing clinical workflows, Resolving Problems and streamlining healthcare data systems. This page highlights the technical expertise, collaborative projects, and professional growth I achieved during this term.
+          </p>
+        </div>
       </div>
-    </section><!-- End Abstract/Introduction Section -->
+    </section>
 
-    <!-- Information About the Employer Section -->
-    <section id="employer-info" class="section">
+    <section id="employer-info" class="section pt-0">
       <div class="container" data-aos="fade-up">
-        <h2>Information About the Employer</h2>
-        <p><strong>Organization:</strong> University of Guelph</p>
-        <p><strong>Division:</strong> Ontario Veterinary College, Health Informatics</p>
-        <p>
-          The Health Informatics team at OVC is dedicated to maintaining and advancing the digital infrastructure that supports hospital operations. By integrating cutting-edge technology and ensuring operational reliability, the team enhances patient care and clinical workflows. My role involved maintaining medical systems, resolving hardware and software issues, Integrating new Technologies that better help the veternatians and ensuring access rights were appropriately managed to safeguard sensitive information.        <p><strong>Name:</strong> Leroy Carter</p>
-        <p><strong>Title:</strong> Manager, Health Informatics</p>
-        <p><strong>Email:</strong> <a href="mailto:	lcart@uoguelph.ca">	lcart@uoguelph.ca</a></p>
+        <div class="details4-card">
+          <h2>Employer Information</h2>
+          <div class="info-grid">
+            <div class="info-tile"><span>Organization</span><strong>University of Guelph</strong></div>
+            <div class="info-tile"><span>Division</span><strong>OVC Health Informatics</strong></div>
+            <div class="info-tile"><span>Supervisor</span><strong>Leroy Carter</strong></div>
+            <div class="info-tile"><span>Contact</span><strong><a href="mailto:lcart@uoguelph.ca">lcart@uoguelph.ca</a></strong></div>
+          </div>
+          <p class="mb-0">
+            The Health Informatics team at OVC is dedicated to maintaining and advancing the digital infrastructure that supports hospital operations. By integrating cutting-edge technology and ensuring operational reliability, the team enhances patient care and clinical workflows. My role involved maintaining medical systems, resolving hardware and software issues, Integrating new Technologies that better help the veternatians and ensuring access rights were appropriately managed to safeguard sensitive information.
+          </p>
+        </div>
       </div>
-    </section><!-- End Information About the Employer Section -->
+    </section>
 
-    <!-- Goals Section -->
-    <section id="goals" class="section">
+    <section id="goals" class="section pt-0">
       <div class="container" data-aos="fade-up">
-        <h2>Goals</h2>
-        <p>For this work term, I set several key learning outcomes:</p>
-        <ul>
-          <li><strong>Technological Literacy and Problem Solving</strong>
-            <p>I aimed to expand my expertise in healthcare IT systems such as Imprivata, CorePoint, and ezyVet, while developing troubleshooting skills for managing support tickets using the Footprints system.</p>
-          </li>
-          
-          <li><strong>Personal Organization and Time Management</strong>
-            <p>I focused on creating a structured work-life balance by using task management tools to prioritize tasks, meet deadlines, and ensure well-being.</p>
-          </li>
-          
-          <li><strong>Communication and Teamwork</strong>
-            <p>I worked on enhancing communication across teams by providing regular updates and fostering collaboration, while ensuring tasks were effectively delegated to improve team efficiency and project outcomes.</p>
-          </li>
-        </ul>
-        
+        <div class="details4-card">
+          <h2>Goals</h2>
+          <p>For this work term, I set several key learning outcomes:</p>
+          <ul>
+            <li><strong>Technological Literacy and Problem Solving:</strong> I aimed to expand my expertise in healthcare IT systems such as Imprivata, CorePoint, and ezyVet, while developing troubleshooting skills for managing support tickets using the Footprints system.</li>
+            <li><strong>Personal Organization and Time Management:</strong> I focused on creating a structured work-life balance by using task management tools to prioritize tasks, meet deadlines, and ensure well-being.</li>
+            <li><strong>Communication and Teamwork:</strong> I worked on enhancing communication across teams by providing regular updates and fostering collaboration, while ensuring tasks were effectively delegated to improve team efficiency and project outcomes.</li>
+          </ul>
+        </div>
       </div>
-    </section><!-- End Goals Section -->
+    </section>
 
-    <!-- Job Description Section -->
-    <section id="job-description" class="section">
+    <section id="job-description" class="section pt-0">
       <div class="container" data-aos="fade-up">
-        <h2>Job Description</h2>
-        <p>During this work term, my role revolved around maintaining and optimizing healthcare IT systems:</p>
-        <ul>
-          <li><strong>System Maintenance:</strong> I ensured the upkeep and smooth operation of critical medical systems, including troubleshooting and resolving hardware and software issues.</li>
-          <li><strong>System Integration:</strong> I assisted in the integration of new systems into the existing healthcare infrastructure, ensuring seamless functionality across platforms.</li>
-          <li><strong>Ticket Management:</strong> I managed and resolved technical issues through the ticketing system, providing timely solutions for IT support requests.</li>
-          <li><strong>Access Control:</strong> I managed user access rights and permissions, ensuring secure and appropriate access to medical systems and patient data.</li>
-          <li><strong>Documentation:</strong> I maintained comprehensive system documentation and manuals to ensure that technical processes and system integrations were well-documented for future reference and troubleshooting.</li>
-        </ul>
-        <p>
-          The skills I utilized included troubleshooting, system integration, access control management, and clear communication. While my coursework provided a foundation in general IT and programming, I significantly expanded my practical experience in maintaining complex healthcare systems and collaborating with multidisciplinary teams.
-        </p>
-        
+        <div class="details4-card">
+          <h2>Job Description</h2>
+          <p>During this work term, my role revolved around maintaining and optimizing healthcare IT systems:</p>
+          <ul>
+            <li><strong>System Maintenance:</strong> I ensured the upkeep and smooth operation of critical medical systems, including troubleshooting and resolving hardware and software issues.</li>
+            <li><strong>System Integration:</strong> I assisted in the integration of new systems into the existing healthcare infrastructure, ensuring seamless functionality across platforms.</li>
+            <li><strong>Ticket Management:</strong> I managed and resolved technical issues through the ticketing system, providing timely solutions for IT support requests.</li>
+            <li><strong>Access Control:</strong> I managed user access rights and permissions, ensuring secure and appropriate access to medical systems and patient data.</li>
+            <li><strong>Documentation:</strong> I maintained comprehensive system documentation and manuals to ensure that technical processes and system integrations were well-documented for future reference and troubleshooting.</li>
+          </ul>
+          <p class="mb-0">
+            The skills I utilized included troubleshooting, system integration, access control management, and clear communication. While my coursework provided a foundation in general IT and programming, I significantly expanded my practical experience in maintaining complex healthcare systems and collaborating with multidisciplinary teams.
+          </p>
+        </div>
       </div>
-    </section><!-- End Job Description Section -->
+    </section>
 
-    <!-- Conclusions Section -->
-    <section id="conclusions" class="section">
-      
-  
-  <div class="container" data-aos="fade-up">
-    <h2>Conclusions</h2>
-    <p>
-      This work term has played a crucial role in expanding my expertise in both medical IT systems and support services. Throughout the term, I developed proficiency with various technologies like Imprivata, ezyVet, and Footprints, which allowed me to contribute to system integration, troubleshooting, and user support within a healthcare environment. These experiences have deepened my understanding of how IT solutions can enhance operational efficiency in medical and educational settings.
-    </p>
-    <p>
-      Additionally, my focus on time management and communication has greatly improved my ability to balance work tasks with personal responsibilities, which is essential in a fast-paced, multifaceted environment. By developing clear communication channels and establishing a structured schedule, I was able to contribute more effectively to team discussions and deliver results on time.
-    </p>
-    <p>
-      The collaborative nature of the role further honed my teamwork skills, as I consistently worked with various stakeholders to address system issues and optimize processes. This work term has confirmed my passion for IT systems and their applications in real-world scenarios, reinforcing my commitment to pursuing a career in technology-driven solutions for healthcare and education.
-    </p>
-    
-  </div>
-</section>
-<!-- End Conclusions Section -->
-        <section id="reflection" class="section">
-  <div class="container" data-aos="fade-up">
-    <h2>Reflection</h2>
-    <p>
-      Reflecting on my work term, I recognize how this experience has significantly influenced my professional and personal growth. I was able to apply the IT skills I developed through coursework to real-world challenges, particularly in managing and troubleshooting healthcare systems. This experience has refined my technical proficiency, enhanced my problem-solving capabilities, and bolstered my resilience when faced with complex issues.
-    </p>
-    <p>
-      One of the most valuable takeaways was the emphasis on communication and teamwork. I collaborated with various teams to resolve issues and streamline workflows, and my role in managing and resolving tickets honed my ability to address both technical and user concerns. Effective communication—particularly in conveying complex system details to non-technical stakeholders—was essential in ensuring smooth operations and resolving system-related challenges.
-    </p>
-    <p>
-      I also developed a greater understanding of the importance of system integration and the need for continual maintenance. The process of managing and integrating new systems, such as Imprivata and ezyVet, showed me the value of continuous improvement and collaboration across teams to enhance system reliability and performance. This experience reinforced the importance of adaptability and innovation when facing evolving technology landscapes.
-    </p>
-    <p>
-      Overall, this work term has been a pivotal step in my career journey. It has broadened my understanding of how IT solutions support healthcare environments, strengthened my communication skills, and reinforced the importance of teamwork in achieving operational goals. Moving forward, I am eager to apply these experiences to further explore how technology can streamline and improve processes in various industries, including healthcare and education.
-    </p>
-    
-</section>
+    <section id="conclusions" class="section pt-0">
+      <div class="container" data-aos="fade-up">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="details4-card h-100">
+              <h2>Conclusions</h2>
+              <p>
+                This work term has played a crucial role in expanding my expertise in both medical IT systems and support services. Throughout the term, I developed proficiency with various technologies like Imprivata, ezyVet, and Footprints, which allowed me to contribute to system integration, troubleshooting, and user support within a healthcare environment. These experiences have deepened my understanding of how IT solutions can enhance operational efficiency in medical and educational settings.
+              </p>
+              <p>
+                Additionally, my focus on time management and communication has greatly improved my ability to balance work tasks with personal responsibilities, which is essential in a fast-paced, multifaceted environment. By developing clear communication channels and establishing a structured schedule, I was able to contribute more effectively to team discussions and deliver results on time.
+              </p>
+              <p class="mb-0">
+                The collaborative nature of the role further honed my teamwork skills, as I consistently worked with various stakeholders to address system issues and optimize processes. This work term has confirmed my passion for IT systems and their applications in real-world scenarios, reinforcing my commitment to pursuing a career in technology-driven solutions for healthcare and education.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="reflection" class="details4-card h-100">
+              <h2>Reflection</h2>
+              <p>
+                Reflecting on my work term, I recognize how this experience has significantly influenced my professional and personal growth. I was able to apply the IT skills I developed through coursework to real-world challenges, particularly in managing and troubleshooting healthcare systems. This experience has refined my technical proficiency, enhanced my problem-solving capabilities, and bolstered my resilience when faced with complex issues.
+              </p>
+              <p>
+                One of the most valuable takeaways was the emphasis on communication and teamwork. I collaborated with various teams to resolve issues and streamline workflows, and my role in managing and resolving tickets honed my ability to address both technical and user concerns. Effective communication-particularly in conveying complex system details to non-technical stakeholders-was essential in ensuring smooth operations and resolving system-related challenges.
+              </p>
+              <p>
+                I also developed a greater understanding of the importance of system integration and the need for continual maintenance. The process of managing and integrating new systems, such as Imprivata and ezyVet, showed me the value of continuous improvement and collaboration across teams to enhance system reliability and performance. This experience reinforced the importance of adaptability and innovation when facing evolving technology landscapes.
+              </p>
+              <p class="mb-0">
+                Overall, this work term has been a pivotal step in my career journey. It has broadened my understanding of how IT solutions support healthcare environments, strengthened my communication skills, and reinforced the importance of teamwork in achieving operational goals. Moving forward, I am eager to apply these experiences to further explore how technology can streamline and improve processes in various industries, including healthcare and education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
- <footer id="footer" class="footer accent-background">
+
+  <footer id="footer" class="footer accent-background">
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Shreeharsh Jadhav</strong> <span>All Rights Reserved</span></p>
+        <p>Copyright <strong class="px-1 sitename">Shreeharsh Jadhav</strong> All Rights Reserved</p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href="mailto:shreeharshjadhav79@gmail.com"><i class="bi bi-google"></i></a>
         <a href="https://github.com/Hypeeq"><i class="bi bi-github"></i></a>
         <a href="https://www.linkedin.com/in/shreeharsh-jadhav-28648b223/"><i class="bi bi-linkedin"></i></a>
       </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -241,10 +255,9 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
 
 </html>
+
